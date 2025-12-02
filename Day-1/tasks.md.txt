@@ -1,0 +1,68 @@
+# 📝 Day 1 Tasks — GCP Foundations
+
+## ✔ Task 1: Create Your GCP Account
+- Sign up at https://cloud.google.com  
+- Activate free credits  
+- Enable billing  
+- Access the Google Cloud Console  
+
+---
+
+## ✔ Task 2: Create a New Project
+- Create project → `sre-learning-project`  
+- Note the:  
+  - Project ID  
+  - Project Number  
+
+---
+
+## ✔ Task 3: Explore IAM & Admin
+Check:
+- Current roles (Owner, Editor, Viewer)  
+- Predefined roles:
+  - Compute Viewer  
+  - Compute Admin  
+  - Storage Admin  
+  - Network Admin  
+
+Understand how IAM controls permissions.
+
+---
+
+## ✔ Task 4: Explore Regions & Zones
+Go to:
+**Compute Engine → Create VM → Region options**
+
+Check:
+- Region list  
+- Zone list  
+- Pricing differences  
+
+---
+
+## ✔ Task 5: Navigate Important GCP Services
+Open and explore:
+- Compute Engine  
+- VPC Network  
+- Cloud Storage  
+- BigQuery  
+- IAM & Admin  
+- Cloud Shell  
+
+(Do not create anything yet.)
+
+---
+
+## ✔ Task 6: Write Day 1 Answers
+
+Write in your own words:
+1. What is a GCP Project?  
+2. What is IAM and why is it important?  
+3. Region vs Zone difference  
+4. Why cloud is better than on-premise  
+
+---
+
+## ✔ Task 7: Upload to GitHub
+Add folder:
+
