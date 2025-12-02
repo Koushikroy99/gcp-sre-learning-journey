@@ -1,140 +1,101 @@
-# 🚀 Day 1 — GCP Foundations (Cloud + IAM + Project + Regions/Zones)
+# Day 01 – Introduction to GCP & SRE
 
-## ⭐ Overview
-Day 1 is focused on learning the essential foundation required for any Cloud Engineer, DevOps Engineer, or SRE.
+## 🚀 What I Learned Today
 
----
+### 1. What is Google Cloud Platform (GCP)?
+Google Cloud Platform is a collection of cloud services (compute, storage, networking, databases, DevOps tools, security, etc.) provided by Google.  
+Enterprises use GCP to deploy applications, run infrastructure, store data, and scale globally.
 
-# 1️⃣ What is Cloud?
-Cloud means renting computing resources instead of buying physical servers.
+### 2. Why SRE (Site Reliability Engineering)?
+SRE is a discipline created by Google to manage:
+- reliability  
+- performance  
+- scalability  
+- incident response  
+- monitoring & alerting  
+- automation & reducing manual work (toil)
 
-### On-Premise Limitations:
-- High cost  
-- Hardware maintenance  
-- Slow scaling  
-- Manual upgrades  
+SRE acts as a bridge between **software engineering** and **operations**.
 
-### Cloud Advantages:
-- Create servers in seconds  
-- Fast global scalability  
-- No physical maintenance  
-- Pay only for what you use  
-- Highly available and secure  
+### 3. Core SRE Focus Areas
+- **Availability** → Keep services up & healthy  
+- **Latency** → Reduce delays in response time  
+- **Performance** → Optimize systems  
+- **Monitoring & Logging** → Know what’s happening inside the system  
+- **Automation** → Replace manual tasks  
+- **Incident Response** → Detect, respond, learn  
+- **Capacity Planning** → Predict & plan for load  
 
----
+### 4. Important SRE Terms (Basic Understanding)
+- **SLI (Service Level Indicator)** → Actual metrics (latency, error rate, availability)  
+- **SLO (Service Level Objective)** → Target (e.g., 99.9% uptime)  
+- **SLA (Service Level Agreement)** → Promise to customers + penalties  
 
-# 2️⃣ Why GCP?
-GCP is preferred due to:
-- Strong global network backbone  
-- SRE-driven architecture  
-- Best IAM security  
-- Easy automation  
-- Cost-effective servers  
-- GKE (best Kubernetes platform)  
-- BigQuery (fastest analytics engine)
-
----
-
-# 3️⃣ GCP Project (Your Main Workspace)
-A project contains:
-- VM Instances  
-- VPC Networks  
-- Subnets  
-- Firewall Rules  
-- Buckets  
-- BigQuery datasets  
-- APIs & Billing  
-- Service Accounts  
-
-Every action happens **inside a project**.
+You don’t need deep understanding today — just know the basic purpose.
 
 ---
 
-# 4️⃣ IAM (Identity & Access Management)
+## 🌐 GCP Core Concepts (Beginner Friendly)
 
-IAM defines:
-- **Who** can access  
-- **What** resources  
-- **What actions** they can perform  
+### Compute
+Compute services provide virtual machines and managed computing options:
+- **Compute Engine** → Virtual Machines (VMs)
+- **App Engine** → Serverless applications
+- **Cloud Run** → Run containers
+- **GKE** → Kubernetes-based container orchestration
 
-### IAM Components:
-- **Users / Members**
-- **Roles**
-  - Owner
-  - Editor
-  - Viewer
-- **Predefined Roles** (Compute Admin, Storage Admin, Network Admin)
-- **Custom Roles**
-- **Policies**
+### Storage
+- **Cloud Storage (Buckets)** → Object storage
+- **Persistent Disks** → VM storage
+- **Filestore** → Network-attached storage
+- **SQL / NoSQL Databases** → Cloud SQL, Firestore, Bigtable
 
-IAM is the most important part of GCP security.
+### Networking
+- **VPC (Virtual Private Cloud)** → Private network inside GCP  
+- **Subnets** → Divide VPC  
+- **Routes** → How traffic moves  
+- **Firewall Rules** → Allow/deny traffic  
 
----
+### IAM (Identity & Access Management)
+Controls:
+- who can access  
+- what they can access  
+- how they can access
 
-# 5️⃣ Regions & Zones
-
-### Region:
-A geographical location  
-Example:  
-- asia-south1 (Mumbai)  
-- us-central1 (Iowa)
-
-### Zone:
-A datacenter within a region  
-Example:  
-- asia-south1-a  
-- asia-south1-b  
-- asia-south1-c  
-
-Zones = High availability
+Role types:
+- Basic (Owner / Editor / Viewer)  
+- Predefined (specific service roles)  
+- Custom (fully controlled role)  
 
 ---
 
-# 6️⃣ Compute Engine (VM Instances)
+## ⚙️ GCP Console Environment Overview
 
-VM features:
-- Machine types (E2, N2, C2)
-- Public / Private IP
-- Boot disk
-- Firewall rules
-- Metadata
-- Snapshots / Images
-- Service accounts
+When you login to the GCP Console, you should know:
+- **Project** → Everything in GCP lives inside a project  
+- **Billing** → Linked to project  
+- **Navigation Menu** → Access to all services  
+- **Cloud Shell** → Built-in Linux terminal  
+- **Cloud SDK (gcloud)** → CLI tool used for automation
 
 ---
 
-# 7️⃣ VPC (Virtual Private Cloud)
-GCP's networking platform.
+## 🔍 Why Cloud Engineers + SRE Need These Basics
+You must understand:
+- how cloud services work  
+- how networks are created  
+- how applications run  
+- how reliability is measured  
 
-Includes:
-- Subnets  
-- IP ranges  
-- Routes  
-- Firewalls  
-- NAT  
-- VPC Peering  
-
-Your networking background gives a strong advantage here.
+Today's goal was learning the environment, not doing tasks.
 
 ---
 
-# 8️⃣ Cloud Shell
-A browser-based Linux environment with:
-- gcloud CLI  
-- Terraform support  
-- Git installed  
-- 5GB persistent home directory  
+## 🎯 Summary of Day 01
+- Understood what GCP is  
+- Understood what SRE is  
+- Learned basic SRE terms (SLI/SLO/SLA)  
+- Learned core components of GCP (compute, storage, networking)  
+- Explored IAM, Console, and Projects basics  
 
-Used by SRE/DevOps for automation and deployments.
-
----
-
-# 📌 Day 1 Summary
-- Learned Cloud basics  
-- Understood Projects & IAM  
-- Explored Regions/Zones  
-- Viewed Compute Engine & VPC  
-- Started Cloud Shell  
-- Prepared for Day 2 hands-on VM creation  
-
-
+Tomorrow onwards, we’ll start doing practical tasks.  
